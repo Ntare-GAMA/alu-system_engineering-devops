@@ -1,7 +1,3 @@
-Here’s a super simple **README** file that even a **2-year-old** could understand:  
-
----
-
 ## **Web Server Setup - Easy Guide!** 🚀  
 
 ### **What’s This About?**  
