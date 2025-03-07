@@ -16,3 +16,4 @@ We are setting up a **web server** to show cool stuff on the internet! 🌍✨
 - 🌐 **[How the Web Works](#)**  
 - 🚀 **[Nginx](#)**  
 - ⚙️ **[How to Configure Nginx](#)**
+
