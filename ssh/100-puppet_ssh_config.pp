@@ -1,4 +1,5 @@
 # No PasswordAuthentication using puppet
+# SSH configuration file
 file { '/etc/ssh/ssh_config':
   owner   => 'root',
   group   => 'root',
