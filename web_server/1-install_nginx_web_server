@@ -1,32 +1,12 @@
 #!/usr/bin/env bash
-# This script configures an Ubuntu machine to install Nginx and set up a custom root page
+# This script installs Nginx on web-01 and configures it to serve 'Holberton School for the win!'
 
-# Update package lists
+# Install Nginx with automatic yes to all prompts
 apt-get update
-
-# Install Nginx
 apt-get install -y nginx
 
-# Create a custom HTML file with "Holberton School" text
-echo "Holberton School" > /var/www/html/index.html
+# Create a custom HTML file with the required text
+echo "Holberton School for the win!" > /var/www/html/index.html
 
-# Configure Nginx default site
-cat > /etc/nginx/sites-available/default << EOF
-server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
-    
-    root /var/www/html;
-    index index.html;
-    
-    server_name _;
-    
-    location / {
-        try_files \$uri \$uri/ =404;
-    }
-}
-EOF
-
-# Restart Nginx to apply changes
+# Restart Nginx using init.d instead of systemctl
 service nginx restart
-Last edited just now
